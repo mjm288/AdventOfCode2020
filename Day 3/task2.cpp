@@ -56,14 +56,10 @@ int main()
 
 
 
-        for (int i=0;i<(lines.size());i+=2)
+        for (int i=0;i<(lines.size());i+=2) //stepping 2 down
         {
-            //cout << pwds[i][tindex] << endl;
-            //cout << i << pwds[i] << endl;
-            //cout << i << endl;
-            if (lines[i][tindex4] == '#')
+            if (lines[i][tindex4] == '#') //if tree found increment count
             {
-                //cout << i;
                 treeCount4++;
             }
             tindex4 = (tindex4 + 1) % lines[i].length();
